@@ -85,12 +85,11 @@ def compute_diff(img1, img2, bins, min_max):
     assert torch.allclose(norm, hist2.sum(dim=1, keepdim=True))
     hist1 = hist1 / norm
     hist2 = hist2 / norm
-    # distance = torch.mean(torch.abs(hist1-hist2),dim=-1)
     distance = torch_cdf_loss(hist1, hist2, p=1, average=False) / (bins - 1)
     return distance
 
 
-class AdversarialColorDistanceMetric:
+class AestheticColorDistanceMetric:
     def __init__(self,
                  window_size=11,
                  bins=(10, 16, 16),

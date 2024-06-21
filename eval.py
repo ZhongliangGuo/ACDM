@@ -11,7 +11,7 @@ from torch.utils import data
 from metrics.SSIM import SSIM
 from torchvision import transforms
 from argparse import ArgumentParser
-from metrics.ACDM import AdversarialColorDistanceMetric
+from metrics.ACDM import AestheticColorDistanceMetric
 
 
 def init_seeds(seed=3407):
@@ -95,7 +95,7 @@ def main():
     args = parser.parse_args()
     device = torch.device('cuda')
     nst = EFDM(device, args.vgg_path, args.efdm_decoder_path)
-    acdm = AdversarialColorDistanceMetric()
+    acdm = AestheticColorDistanceMetric()
     ssim = SSIM()
     lpips_loss = LPIPS(net='vgg').cuda()
     init_seeds(args.random_seed)

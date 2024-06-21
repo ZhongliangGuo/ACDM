@@ -4,7 +4,7 @@ This project is for the ACDM we proposed in our [paper](https://arxiv.org/abs/24
 
 The `eval.py` contains the settings for reproducing the result of `Table 1` in the main paper.
 
-We use the [EFDM](https://arxiv.org/abs/2203.07740) to generate the image pairs which have:
+We use the [EFDM](https://arxiv.org/abs/2203.07740) (the pre-trained vgg and decoder can be found in the link) to generate the image pairs which have:
 
 1. same content but different style
 2. same style but different content
