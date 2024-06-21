@@ -11,6 +11,16 @@ We use the [EFDM](https://arxiv.org/abs/2203.07740) (the pre-trained vgg and dec
 
 For datasets, we use the [COCO](https://cocodataset.org/#home) and [WikiArt (painter by numbers)](https://www.kaggle.com/c/painter-by-numbers). As some images are too huge to be processed by PIL, so I filtered some files, the files we kept for the project are listed in the `style.csv` and `content.csv`.
 
+We used 10,000 pairs of images with `random_seed=3407`, the result is:
+
+| IQA       | positive pair | negative pair |
+| --------- | ------------- | ------------- |
+| SSIMc     | 0.2871        | 0.4072        |
+| LPIPS_vgg | 0.5851        | 0.5459        |
+| ACDM      | 0.0464        | 0.2982        |
+
+
+
 ## Cite
 
 ```latex
