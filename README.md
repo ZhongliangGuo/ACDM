@@ -10,3 +10,17 @@ We use the [EFDM](https://arxiv.org/abs/2203.07740) (the pre-trained vgg and dec
 2. same style but different content
 
 For datasets, we use the [COCO](https://cocodataset.org/#home) and [WikiArt (painter by numbers)](https://www.kaggle.com/c/painter-by-numbers). As some images are too huge to be processed by PIL, so I filtered some files, the files we kept for the project are listed in the `style.csv` and `content.csv`.
+
+## Cite
+
+```latex
+@incollection{guo2024artwork,
+  title={Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack},
+  author={Guo, Zhongliang and Dong, Junhao and Qian, Yifei and Wang, Kaixuan and Li, Weiye and Guo, Ziheng and Wang, Yuheng and Li, Yanli and Arandjelovi{\'c}, Ognjen and Fang, Lei},
+  booktitle={ECAI 2024},
+  pages={XXX--XXX},
+  year={2024},
+  publisher={IOS Press}
+}
+```
+
