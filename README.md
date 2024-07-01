@@ -20,6 +20,17 @@ We used 10,000 pairs of images with `random_seed=3407`, the result is:
 | ACDM      | 0.0464        | 0.2982        |
 
 
+## Enviroment
+
+```
+lpips==0.1.4
+numpy==2.0.0
+Pillow==9.2.0
+torch==2.0.0
+torchvision==0.15.1
+tqdm==4.65.0
+```
+
 
 ## Cite
 
