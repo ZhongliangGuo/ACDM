@@ -1,6 +1,6 @@
 # Aesthetic Color Distance Metric
 
-This project is for the ACDM we proposed in the paper "[Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack](https://arxiv.org/abs/2401.09673)".
+This project is for the ACDM we proposed in the paper "[Artwork Protection Against Neural Style Transfer Using Locally Adaptive Adversarial Color Attack](https://arxiv.org/abs/2401.09673)", which is accepted by **50th European Conference on Artificial Intelligence (ECAI 2024)**.
 
 The `eval.py` contains the settings for reproducing the result of `Table 1` in the main paper.
 
